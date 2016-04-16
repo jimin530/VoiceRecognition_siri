@@ -9,4 +9,4 @@ Then, spotting servece(CMU Sphinx) will stop and voice recognition service(Googl
 
 From now on, you can talk with Google Voice!
 
-If you want to exit Google Voice, just say "Hello".
+If you want to exit Google Voice, just say "Bye".
