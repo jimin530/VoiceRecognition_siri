@@ -3,7 +3,7 @@ Android Voice Recognition Like Siri
 
 Click 'Start Spotting' button then, spotting service(CMU Sphinx) will run.
 
-When you Speak "Hi Android" like you say "siri", Toast message will be shown "Wakeup".
+When you speak "Hi Android" like you say "siri", Toast message will be shown "Wakeup".
 
 Then, spotting servece(CMU Sphinx) will stop and voice recognition service(Google Voice) will run.
 
