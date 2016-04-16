@@ -78,7 +78,7 @@ public class SttService extends Service {
             String[] rs = new String[mResult.size()];
             mResult.toArray(rs);
 
-            if (rs[0].contains("Bye")) {
+            if (rs[0].contains("bye")) {
                 Toast.makeText(getApplicationContext(), "Bye Kim!", Toast.LENGTH_SHORT).show();
                 if (mRecognizer != null) {
                     mRecognizer.destroy();
