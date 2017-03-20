@@ -15,9 +15,9 @@
         android:layout_height="wrap_content"
         android:text="Start Spotting"
         android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="122dp" />
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,5 +36,14 @@
         android:text="'Hi Android'"
         android:id="@+id/textView2"
         android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Spotting"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
