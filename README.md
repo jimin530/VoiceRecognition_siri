@@ -12,6 +12,6 @@ From now on, you can talk with Google Voice!
 If you want to exit Google Voice, just say "Bye".
 
 ------------------------------------------------------------------------------------------------------
-2017. 03. 21.
+2017-03-21
 
 Add Waveform like siri
