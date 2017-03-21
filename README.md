@@ -14,4 +14,4 @@ If you want to exit Google Voice, just say "Bye".
 ------------------------------------------------------------------------------------------------------
 2017-03-21
 
-Add Waveform like siri
+Add WaveView like siri
