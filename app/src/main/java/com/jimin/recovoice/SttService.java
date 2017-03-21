@@ -11,8 +11,6 @@ import android.util.Log;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class SttService extends Service {
 
@@ -56,8 +54,7 @@ public class SttService extends Service {
             mRecognizer.destroy();
             mRecognizer = null;
         }
-        //startService(new Intent(getApplicationContext(), SpottingService.class)); // Start CMUSphinx by Service
-
+        MainActivity.waveView.speechEnded();
         stopSelf();
     }
 

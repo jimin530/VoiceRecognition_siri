@@ -7,13 +7,16 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
+
+import com.dnkilic.waveform.WaveView;
 
 public class MainActivity extends AppCompatActivity {
 
     Button button, button2;
-
+    public static WaveView waveView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,11 +25,16 @@ public class MainActivity extends AppCompatActivity {
         // permission request
         request_read_audio();
 
+        waveView = (WaveView) findViewById(R.id.waveView);
+
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startService(new Intent(getApplicationContext(), SpottingService.class)); // Start CMUSphinx by Service
+                DisplayMetrics dm = new DisplayMetrics();
+                getWindowManager().getDefaultDisplay().getMetrics(dm);
+                waveView.initialize(dm);
             }
         });
         button2 = (Button) findViewById(R.id.button2);
@@ -34,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 stopService(new Intent(getApplicationContext(), SpottingService.class)); // Start CMUSphinx by Service
+                waveView.stop();
             }
         });
     }

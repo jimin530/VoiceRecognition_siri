@@ -79,6 +79,7 @@ public class SpottingService extends Service implements RecognitionListener {
 
             timer = new Timer();
             timer.schedule(new MyTimer(), 500);
+            MainActivity.waveView.speechStarted();
         }
     }
 
